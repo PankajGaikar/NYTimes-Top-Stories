@@ -45,6 +45,12 @@ class TopStoriesViewController: UIViewController, UITableViewDelegate, UITableVi
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "StoryDetailsViewController") as! StoryDetailsViewController
+        storyDetailViewController.article = articleViewModel?.articles[indexPath.row]
+        self.navigationController?.pushViewController(storyDetailViewController, animated: true)
+    }
+    
     //MARK:- API responses
     func didLoadData() {
         DispatchQueue.main.async {
