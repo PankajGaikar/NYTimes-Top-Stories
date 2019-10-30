@@ -70,10 +70,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Stories" id="dh9-WA-7Uz"/>
+                    <connections>
+                        <segue destination="znD-bf-02o" kind="show" id="wPf-90-SCx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
+            <point key="canvasLocation" x="1038" y="114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sAy-55-fuX">
@@ -92,6 +95,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dzn-bt-mL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+        <!--Top Stories View Controller-->
+        <scene sceneID="Kgz-Ku-Zyf">
+            <objects>
+                <viewController storyboardIdentifier="TopStoriesViewController" id="znD-bf-02o" customClass="TopStoriesViewController" customModule="NYTimes_Top_Stories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="crg-tt-Nz5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Fbi-W6-EqG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rUl-O2-Vkq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyV-91-FMJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="114"/>
         </scene>
     </scenes>
 </document>
