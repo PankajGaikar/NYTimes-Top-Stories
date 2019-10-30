@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF8DAB562369B51F00E8D015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DAB552369B51F00E8D015 /* AppDelegate.swift */; };
-		BF8DAB5A2369B51F00E8D015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DAB592369B51F00E8D015 /* ViewController.swift */; };
 		BF8DAB5D2369B51F00E8D015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DAB5B2369B51F00E8D015 /* Main.storyboard */; };
 		BF8DAB5F2369B52100E8D015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DAB5E2369B52100E8D015 /* Assets.xcassets */; };
 		BF8DAB622369B52100E8D015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DAB602369B52100E8D015 /* LaunchScreen.storyboard */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		BF8DAB522369B51F00E8D015 /* NYTimes Top Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYTimes Top Stories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DAB552369B51F00E8D015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF8DAB592369B51F00E8D015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8DAB5C2369B51F00E8D015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8DAB5E2369B52100E8D015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8DAB612369B52100E8D015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				BF8DAB872369B61A00E8D015 /* ViewModel */,
 				BF8DAB882369B62400E8D015 /* Service */,
 				BF8DAB862369B61400E8D015 /* ViewControllers */,
-				BF8DAB592369B51F00E8D015 /* ViewController.swift */,
 				BF8DAB632369B52100E8D015 /* Info.plist */,
 				BF8DAB5B2369B51F00E8D015 /* Main.storyboard */,
 				BF8DAB5E2369B52100E8D015 /* Assets.xcassets */,
@@ -338,7 +335,6 @@
 				BF8DAB8C2369B70400E8D015 /* TopStoriesViewController.swift in Sources */,
 				BFAA50A1236A253800D62B8F /* NewsTableViewCell.swift in Sources */,
 				BF8DAB942369B75E00E8D015 /* SectionViewModel.swift in Sources */,
-				BF8DAB5A2369B51F00E8D015 /* ViewController.swift in Sources */,
 				BF8DAB8A2369B6EE00E8D015 /* SectionsViewController.swift in Sources */,
 				BF8DAB902369B74200E8D015 /* Section.swift in Sources */,
 				BF8DAB982369B77900E8D015 /* Extensions.swift in Sources */,
