@@ -8,15 +8,29 @@
 
 import Foundation
 
+protocol ArticleFetchDelegate {
+    func didLoadData()
+    func didLoadFailed()
+}
+
 class ArticleViewModel {
     
     var selectedSection: String
-    
+    var delegate: ArticleFetchDelegate?
     var articles = [Article]()
     
     init( selectedSection: String ) {
         self.selectedSection = selectedSection
     }
+    
+    func numberOfRow(section:Int) -> Int{
+        return articles.count
+    }
+
+    func cellForRow(indexPath: IndexPath) -> Article {
+        return self.articles[indexPath.row]
+    }
+
     
     func fetchTopStories() -> Void {
         
@@ -31,9 +45,14 @@ class ArticleViewModel {
                     decoder.dateDecodingStrategy = .iso8601
                     let topStories = try decoder.decode(Welcome.self, from: data)
                     self.articles = topStories.articles
+                    
+                    //Success handling
+                    self.delegate?.didLoadData()
                     print("Parsing successful")
                 } catch {
                     print(error)
+                    //Failure Handling
+                    self.delegate?.didLoadFailed()
                 }
             }
         }.resume()
