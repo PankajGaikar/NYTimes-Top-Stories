@@ -15,7 +15,7 @@ class TopStoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = articleViewModel?.selectedSection.uppercased()
-        
+        articleViewModel?.fetchTopStories()        
     }
 
 }
