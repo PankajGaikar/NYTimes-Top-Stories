@@ -40,5 +40,12 @@ class SectionsViewController: UIViewController, UICollectionViewDelegate, UIColl
         let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
         return CGSize(width: size, height: size)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let articleViewModel = ArticleViewModel(selectedSection: sectionViewModel.sections[indexPath.row].title)
+        let topStoriesViewController = self.storyboard?.instantiateViewController(withIdentifier: "TopStoriesViewController") as! TopStoriesViewController
+        topStoriesViewController.articleViewModel = articleViewModel
+        self.navigationController?.pushViewController(topStoriesViewController, animated: true)
+    }
 
 }

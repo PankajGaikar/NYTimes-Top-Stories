@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class ArticleViewModel {
+    
+    var selectedSection: String
+    
+    var articles = [Article]()
+    
+    init( selectedSection: String ) {
+        self.selectedSection = selectedSection
+    }
+}
