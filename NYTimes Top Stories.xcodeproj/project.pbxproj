@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF8DAB562369B51F00E8D015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DAB552369B51F00E8D015 /* AppDelegate.swift */; };
-		BF8DAB582369B51F00E8D015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DAB572369B51F00E8D015 /* SceneDelegate.swift */; };
 		BF8DAB5A2369B51F00E8D015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DAB592369B51F00E8D015 /* ViewController.swift */; };
 		BF8DAB5D2369B51F00E8D015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8DAB5B2369B51F00E8D015 /* Main.storyboard */; };
 		BF8DAB5F2369B52100E8D015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DAB5E2369B52100E8D015 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		BF8DAB522369B51F00E8D015 /* NYTimes Top Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYTimes Top Stories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DAB552369B51F00E8D015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF8DAB572369B51F00E8D015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF8DAB592369B51F00E8D015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8DAB5C2369B51F00E8D015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8DAB5E2369B52100E8D015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				BF8DAB552369B51F00E8D015 /* AppDelegate.swift */,
-				BF8DAB572369B51F00E8D015 /* SceneDelegate.swift */,
 				BF8DAB592369B51F00E8D015 /* ViewController.swift */,
 				BF8DAB5B2369B51F00E8D015 /* Main.storyboard */,
 				BF8DAB5E2369B52100E8D015 /* Assets.xcassets */,
@@ -261,7 +258,6 @@
 			files = (
 				BF8DAB5A2369B51F00E8D015 /* ViewController.swift in Sources */,
 				BF8DAB562369B51F00E8D015 /* AppDelegate.swift in Sources */,
-				BF8DAB582369B51F00E8D015 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3H2F8CC68;
 				INFOPLIST_FILE = "NYTimes Top Stories/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3H2F8CC68;
 				INFOPLIST_FILE = "NYTimes Top Stories/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
