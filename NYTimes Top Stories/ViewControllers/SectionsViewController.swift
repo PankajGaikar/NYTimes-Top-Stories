@@ -57,14 +57,6 @@ class SectionsViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            print("Landscape")
-            if UIDevice.current.orientation.isFlat {
-                print("Flat")
-            } else {
-                print("Portrait")
-            }
-        }
         collectionView.reloadData()
     }
 }
