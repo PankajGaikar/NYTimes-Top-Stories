@@ -11,6 +11,7 @@ import UIKit
 class SectionsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var sectionViewModel = SectionViewModel()
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,14 @@ class SectionsViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let noOfCellsInRow = 3
+        
+        var noOfCellsInRow = 3
+        if UIApplication.shared.statusBarOrientation == .landscapeLeft ||
+        UIApplication.shared.statusBarOrientation == .landscapeRight {
+            //Increase number of sections in landscape mode
+            noOfCellsInRow = 6
+        }
+        
         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
         let totalSpace = flowLayout.sectionInset.left
             + flowLayout.sectionInset.right
@@ -47,5 +55,16 @@ class SectionsViewController: UIViewController, UICollectionViewDelegate, UIColl
         topStoriesViewController.articleViewModel = articleViewModel
         self.navigationController?.pushViewController(topStoriesViewController, animated: true)
     }
-
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+            if UIDevice.current.orientation.isFlat {
+                print("Flat")
+            } else {
+                print("Portrait")
+            }
+        }
+        collectionView.reloadData()
+    }
 }
