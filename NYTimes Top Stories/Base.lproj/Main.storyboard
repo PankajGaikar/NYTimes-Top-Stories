@@ -69,6 +69,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Top Stories" id="dh9-WA-7Uz"/>
                     <connections>
+                        <outlet property="collectionView" destination="26J-DZ-w4e" id="Aou-B2-Psn"/>
                         <segue destination="znD-bf-02o" kind="show" id="wPf-90-SCx"/>
                     </connections>
                 </viewController>
